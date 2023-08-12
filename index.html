@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <title>Home</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">William.</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <nav class="navbar">
+            <a href="#home" class="active">Accueil</a>
+            <a href="#about">À propos de moi</a>
+            
+            <a href="#projects">Projets</a>
+            <a href="#contacts">Contacts</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Bonjour, je suis <span>William Milan</span></h1>
+            <div class="text-animation">
+                <h3>Etudiant en informatique</h3>
+            </div>
+            <p>Bonjour, explorez mes projets pour découvrir mes compétences en développement. Contactez-moi pour
+                discuter de collaborations.</p>
+            <div class="btn-box">
+                <div class="btn">Voir mes projets</div>
+                <div class="btn">Contactez-moi</div>
+            </div>
+        </div>
+        <div class="home-sci">
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-linkedin'></i></a>
+            <a href="#"><i class='bx bxl-youtube'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2 class="heading">A propos de <span>Moi</span></h2>
+        <div class="about-img">
+            <img src="images/about.jpg" alt="">
+            <span class="circle-spin"></span>
+        </div>
+        <div class="about-content">
+            <h3>Etudiant en informaique</h3>
+            <p>Bonjour ! Je suis William Milan, étudiant en 2ème année de BUT informatique passionné par la résolution
+                de problèmes. Patience, organisation et soif d'apprendre guident ma quête de solutions innovantes. Mon
+                portfolio reflète ma passion pour l'informatique.</p>
+        </div>
+    </section>
+
+    <section class="education" id="projects">
+        <h2 class="heading">Mes <span>Projets</span></h2>
+
+        <div class="search-container">
+            <div class="search-box">
+                <div class="search">
+                    <a class="icon"><i class='bx bx-left-arrow-alt return-icon'></i></a>
+                    <input type="text" id="search-input" placeholder="Rechercher...">
+                    <a class="icon" id="reset"><i class="bx bx-search search-icon"></i></a>
+                </div>
+                <div class="suggestions-container" id="suggestions"></div>
+            </div>
+        </div>
+
+        <div class="filter-btns">
+            <button type="button" class="filter-btn" id="all">Tout</button>
+            <button type="button" class="filter-btn" id="java">Java</button>
+            <button type="button" class="filter-btn" id="system">Système</button>
+            <button type="button" class="filter-btn" id="csharp">C#</button>
+            <button type="button" class="filter-btn" id="sql">SQL</button>
+            <button type="button" class="filter-btn" id="html">HTML/CSS</button>
+            <button type="button" class="filter-btn" id="python">Python</button>
+            <button type="button" class="filter-btn" id="other">Autre</button>
+        </div>
+
+        <div class="projects" id="projectList">
+            <div class="education-row">
+                <div class="education-columns">
+                    <h3 class="semester">1er Semetre</h3>
+
+                    <div class="filter-items">
+                        <div class="education-box all java">
+                            <div class="education-content">
+                                <div class="content">
+                                    <div class="boule leftB">
+                                        <p class="content-left">S1.01</p>
+                                    </div>
+                                    <div class="boule rightB">
+                                        <p class="content-right"><i class='bx bxl-java'></i></p>
+                                    </div>
+                                    <div class="top">
+                                        <div class="titleYear">
+                                            <h1 class="title">Odomo</h1>
+                                            <div class="year"><i class='bx bxs-calendar'></i> 18/10/22 - 10/11/22</div>
+                                        </div>
+                                        <div class="image">
+                                            <img src="images/odomoLogo.png" alt="">
+                                        </div>
+                                    </div>
+                                    <p>Comportement d'une centrale domotique sur un ordinateur</p>
+                                    <span class="tag">Centrale domotique</span><span class="tag">Java</span>
+                                    <div class="button" data-project="Odomo" data-image="images/odomoCode2.png"
+                                        data-texte="Ce projet consistait à programmer le fonctionnement d'une centrale domotique, disposant de plusieurs modes; mode météo, histogramme, chauffage et jardin">
+                                        <div class="btn">En savoir plus</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="education-box all java">
+                            <div class="education-content">
+                                <div class="content">
+                                    <div class="boule leftB">
+                                        <p class="content-left">S1.02</p>
+                                    </div>
+                                    <div class="boule rightB">
+                                        <p class="content-right"><i class='bx bxl-java'></i></p>
+                                    </div>
+                                    <div class="top">
+                                        <div class="titleYear">
+                                            <h1 class="title">Biosphère7</h1>
+                                            <div class="year"><i class='bx bxs-calendar'></i> 18/10/22 - 10/11/22</div>
+                                        </div>
+                                        <div class="image">
+                                            <img src="images/biosphereLogo.png" alt="">
+                                        </div>
+                                    </div>
+                                    <p>Un jeu de plateau original + son intelligence artificielle</p>
+                                    <span class="tag">Jeu de plateau</span><span class="tag">Java</span>
+                                    <span class="tag">Intelligence artificielle</span>
+                                    <div class="button" data-project="Biosphère7" data-image="images/biosphereCode2.png"
+                                        data-texte="Ce projet se découpait en 2 grandes étapes: la conception des divers niveaux du jeu s'enchaînant progressivement puis la programmation de l'intelligence artificielle chargée de jouer au jeu">
+                                        <div class="btn">En savoir plus</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="education-box all system">
+                            <div class="education-content">
+                                <div class="content">
+                                    <div class="boule leftB">
+                                        <p class="content-left">S1.03</p>
+                                    </div>
+                                    <div class="boule rightB">
+                                        <p class="content-right"><i class="fa-brands fa-linux"></i></p>
+                                    </div>
+                                    <div class="top">
+                                        <div class="titleYear">
+                                            <h1 class="title">BUTGames</h1>
+                                            <div class="year"><i class='bx bxs-calendar'></i> 18/10/22 - 10/11/22</div>
+                                        </div>
+                                        <div class="image">
+                                            <img src="images/machineLogo.png" alt="">
+                                        </div>
+                                    </div>
+                                    <p>Machine virtuelle sous Manjaro</p>
+                                    <span class="tag">Machine virtuelle</span><span class="tag">Manjaro</span><span
+                                        class="tag">Système</span>
+                                    <div class="button">
+                                        <div class="btn">En savoir plus</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="education-box all sql">
+                            <div class="education-content">
+                                <div class="content">
+                                    <div class="boule leftB">
+                                        <p class="content-left">S1.04</p>
+                                    </div>
+                                    <div class="boule rightB">
+                                        <p class="content-right"><i class='bx bx-data'></i></p>
+                                    </div>
+                                    <div class="top">
+                                        <div class="titleYear">
+                                            <h1 class="title">BILLETCONCERT</h1>
+                                            <div class="year"><i class='bx bxs-calendar'></i> 18/10/22 - 10/11/22</div>
+                                        </div>
+                                        <div class="image">
+                                            <img src="images/bdLogo.png" alt="">
+                                        </div>
+                                    </div>
+                                    <p>Création + Remplissage d'une base de données</p>
+                                    <span class="tag">SQL</span><span class="tag">Base de données</span>
+                                    <div class="button">
+                                        <div class="btn">En savoir plus</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="education-box all html">
+                            <div class="education-content">
+                                <div class="content">
+                                    <div class="boule leftB">
+                                        <p class="content-left">S1.05</p>
+                                    </div>
+                                    <div class="boule rightB">
+                                        <p class="content-right"><i class='bx bxl-html5'></i></p>
+                                    </div>
+                                    <div class="top">
+                                        <div class="titleYear">
+                                            <h1 class="title">Cabinet W & G</h1>
+                                            <div class="year"><i class='bx bxs-calendar'></i> 18/10/22 - 10/11/22</div>
+                                        </div>
+                                        <div class="image">
+                                            <img src="images/webLogo.png" alt="">
+                                        </div>
+                                    </div>
+                                    <p>Conception d'un site web d'analyses d'entreprises</p>
+                                    <span class="tag">Site web</span><span class="tag">HTML</span><span
+                                        class="tag">CSS</span>
+                                    <div class="button">
+                                        <div class="btn">En savoir plus</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="education-box all other">
+                            <div class="education-content">
+                                <div class="content">
+                                    <div class="boule leftB">
+                                        <p class="content-left">S1.06</p>
+                                    </div>
+                                    <div class="boule rightB">
+                                        <p class="content-right"><i class="fa-regular fa-building"></i></p>
+                                    </div>
+                                    <div class="top">
+                                        <div class="titleYear">
+                                            <h1 class="title">SAFRAN</h1>
+                                            <div class="year"><i class='bx bxs-calendar'></i> 18/10/22 - 10/11/22</div>
+                                        </div>
+                                        <div class="image">
+                                            <img src="images/safranLogo.png" alt="">
+                                        </div>
+                                    </div>
+                                    <p>Document d'analyse du micro/macro environnement de l'entreprise SAFRAN</p>
+                                    <span class="tag">Environnement</span><span class="tag">SAFRAN</span>
+                                    <div class="button">
+                                        <div class="btn">En savoir plus</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="education-columns">
+                    <h3 class="semester">2e Semetre</h3>
+
+                    <div class="filter-items">
+                        <div class="education-box all csharp">
+                            <div class="education-content">
+                                <div class="content">
+                                    <div class="boule leftB">
+                                        <p class="content-left">S2.01</p>
+                                    </div>
+                                    <div class="boule rightB">
+                                        <p class="content-right"><img class="icon-img" src="images/csharpLogo.png" alt=""></p>
+                                    </div>
+                                    <div class="top">
+                                        <div class="titleYear">
+                                            <h1 class="title">Hyperstellar HCSS</h1>
+                                            <div class="year"><i class='bx bxs-calendar'></i> 18/10/22 - 10/11/22</div>
+                                        </div>
+                                        <div class="image">
+                                            <img src="images/hyperstellarLogo.png" alt="">
+                                        </div>
+                                    </div>
+                                    <p>Un jeu de plateau et de réflexion</p>
+                                    <span class="tag">Jeu de plateau</span><span class="tag">C#</span>
+                                    <div class="button">
+                                        <div class="btn">En savoir plus</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="education-box all java">
+                            <div class="education-content">
+                                <div class="content">
+                                    <div class="boule leftB">
+                                        <p class="content-left">S2.02</p>
+                                    </div>
+                                    <div class="boule rightB">
+                                        <p class="content-right"><i class='bx bxl-java'></i></p>
+                                    </div>
+                                    <div class="top">
+                                        <div class="titleYear">
+                                            <h1 class="title">Graphes</h1>
+                                            <div class="year"><i class='bx bxs-calendar'></i> 18/10/22 - 10/11/22</div>
+                                        </div>
+                                        <div class="image">
+                                            <img src="images/graphesLogo.png" alt="">
+                                        </div>
+                                    </div>
+                                    <p>Manipulation + recherche de chemins dans un graphe</p>
+                                    <span class="tag">Graphe</span><span class="tag">Algorithme</span><span
+                                        class="tag">Java</span>
+                                    <div class="button">
+                                        <div class="btn">En savoir plus</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="education-box all system">
+                            <div class="education-content">
+                                <div class="content">
+                                    <div class="boule leftB">
+                                        <p class="content-left">S2.03</p>
+                                    </div>
+                                    <div class="boule rightB">
+                                        <p class="content-right"><i class="fa-brands fa-linux"></i></p>
+                                    </div>
+                                    <div class="top">
+                                        <div class="titleYear">
+                                            <h1 class="title">Debian</h1>
+                                            <div class="year"><i class='bx bxs-calendar'></i> 18/10/22 - 10/11/22</div>
+                                        </div>
+                                        <div class="image">
+                                            <img src="images/machineLogo.png" alt="">
+                                        </div>
+                                    </div>
+                                    <p>Installation + Configuration de service réseaux sous Debian</p>
+                                    <span class="tag">Machine virtuelle</span><span class="tag">Debian</span><span
+                                        class="tag">Système</span>
+                                    <div class="button">
+                                        <div class="btn">En savoir plus</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="education-box all sql python csharp">
+                            <div class="education-content">
+                                <div class="content">
+                                    <div class="boule leftB">
+                                        <p class="content-left">S2.04</br>S2.05</p>
+                                    </div>
+                                    <div class="boule rightB">
+                                        <p class="content-right"><img class="icon-img" src="images/manyLogos.png" alt=""></p>
+                                    </div>
+                                    <div class="top">
+                                        <div class="titleYear">
+                                            <h1 class="title">EcoGr³aph</h1>
+                                            <div class="year"><i class='bx bxs-calendar'></i> 18/10/22 - 10/11/22</div>
+                                        </div>
+                                        <div class="image">
+                                            <img src="images/ecographLogo.png" alt="">
+                                        </div>
+                                    </div>
+                                    <p>Application qui visualise les données environnementales dans les pays européens
+                                    </p>
+                                    <span class="tag">Application</span><span class="tag">Environnement</span><span
+                                        class="tag">Europe</span><span class="tag">SQL</span><span
+                                        class="tag">Python</span><span class="tag">C#</span>
+                                    <div class="button">
+                                        <div class="btn">En savoir plus</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="education-box all other">
+                            <div class="education-content">
+                                <div class="content">
+                                    <div class="boule leftB">
+                                        <p class="content-left">S2.06</p>
+                                    </div>
+                                    <div class="boule rightB">
+                                        <p class="content-right"><i class='bx bxs-file-image'></i></p>
+                                    </div>
+                                    <div class="top">
+                                        <div class="titleYear">
+                                            <h1 class="title">JPO</h1>
+                                            <div class="year"><i class='bx bxs-calendar'></i> 18/10/22 - 10/11/22</div>
+                                        </div>
+                                        <div class="image">
+                                            <img src="images/jpoLogo.png" alt="">
+                                        </div>
+                                    </div>
+                                    <p>Conception d'une affiche pour la Journée Porte Ouvertes</p>
+                                    <span class="tag">Journée porte ouvertes</span>
+                                    <div class="button">
+                                        <div class="btn">En savoir plus</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <div class="text">
+                    <h2>Nom du projet</h2>
+                    <img src="projet.png" alt="Projet">
+                    <p>Description du projet</p>
+                </div>
+                <div class="rectangle left">
+                    <div class="btn">Télécharger mon RETEX</div>
+                </div>
+                <div class="rectangle right">
+                    <div class="btn">Voir mon RETEX</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contactez <span>Moi</span></h2>
+        <form action="email.php">
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" placeholder="Full Name: " required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Full Family Name: " required>
+                    <span class="focus"></span>
+                </div>
+            </div>
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" placeholder="Email: " required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Subject:" required>
+                    <span class="focus"></span>
+                </div>
+            </div>
+
+            <div class="textarea-field">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Message:" required></textarea>
+                <span class="focus"></span>
+            </div>
+
+            <div class="btn-box ">
+                <button class="btn" type="submit">Envoyer</button>
+            </div>
+            </div>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
