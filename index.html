@@ -18,7 +18,7 @@
         <nav class="navbar">
             <a href="#home" class="active">Accueil</a>
             <a href="#about">À propos de moi</a>
-            
+
             <a href="#projects">Projets</a>
             <a href="#contacts">Contacts</a>
         </nav>
@@ -168,7 +168,8 @@
                                     <p>Machine virtuelle sous Manjaro</p>
                                     <span class="tag">Machine virtuelle</span><span class="tag">Manjaro</span><span
                                         class="tag">Système</span>
-                                    <div class="button">
+                                    <div class="button" data-project="BUTGames" data-image="images/machine2.png"
+                                    data-texte="Ce projet consistait à configurer une machine virtuelle pour une entrerise de jeu vidéos, les critères étant une distribution Linux, 2 utilisateurs, un prompt personnalisé avec le langage Go comme langage de base et une taille maximum de Go ">
                                         <div class="btn">En savoir plus</div>
                                     </div>
                                 </div>
@@ -195,7 +196,8 @@
                                     </div>
                                     <p>Création + Remplissage d'une base de données</p>
                                     <span class="tag">SQL</span><span class="tag">Base de données</span>
-                                    <div class="button">
+                                    <div class="button" data-project="BilletConcert" data-image="images/bd.png"
+                                    data-texte="Ce projet consistait à créer et à remplir une base données pour une entreprise de vente de billets de concerts.">
                                         <div class="btn">En savoir plus</div>
                                     </div>
                                 </div>
@@ -223,7 +225,8 @@
                                     <p>Conception d'un site web d'analyses d'entreprises</p>
                                     <span class="tag">Site web</span><span class="tag">HTML</span><span
                                         class="tag">CSS</span>
-                                    <div class="button">
+                                    <div class="button" data-project="Cabinet W & G" data-image="images/web.png"
+                                    data-texte="Ce projet consistait à coder un site web en se mettant dans la peau d'une entreprise de cabinet de conseil, en y présentant toutes les entreprise que l'on a analysé.">
                                         <div class="btn">En savoir plus</div>
                                     </div>
                                 </div>
@@ -250,7 +253,8 @@
                                     </div>
                                     <p>Document d'analyse du micro/macro environnement de l'entreprise SAFRAN</p>
                                     <span class="tag">Environnement</span><span class="tag">SAFRAN</span>
-                                    <div class="button">
+                                    <div class="button" data-project="SAFRAN" data-image="images/safran.png"
+                                    data-texte="Ce projet consistait à rédiger un rapport sur l'analyse de l'entreprise française Safran, où il y a la présentation fonctionelle, l'analyse PESTEL et l'analyse PORTER de Safran">
                                         <div class="btn">En savoir plus</div>
                                     </div>
                                 </div>
@@ -271,7 +275,8 @@
                                         <p class="content-left">S2.01</p>
                                     </div>
                                     <div class="boule rightB">
-                                        <p class="content-right"><img class="icon-img" src="images/csharpLogo.png" alt=""></p>
+                                        <p class="content-right"><img class="icon-img" src="images/csharpLogo.png"
+                                                alt=""></p>
                                     </div>
                                     <div class="top">
                                         <div class="titleYear">
@@ -284,7 +289,8 @@
                                     </div>
                                     <p>Un jeu de plateau et de réflexion</p>
                                     <span class="tag">Jeu de plateau</span><span class="tag">C#</span>
-                                    <div class="button">
+                                    <div class="button"  data-project="Hyperstellar HCSS" data-image="images/safran.png"
+                                    data-texte="Ce projet consistait à rédiger un rapport sur l'analyse de l'entreprise française Safran, où il y a la présentation fonctionelle, l'analyse PESTEL et l'analyse PORTER de Safran">
                                         <div class="btn">En savoir plus</div>
                                     </div>
                                 </div>
@@ -354,7 +360,8 @@
                                         <p class="content-left">S2.04</br>S2.05</p>
                                     </div>
                                     <div class="boule rightB">
-                                        <p class="content-right"><img class="icon-img" src="images/manyLogos.png" alt=""></p>
+                                        <p class="content-right"><img class="icon-img" src="images/manyLogos.png"
+                                                alt=""></p>
                                     </div>
                                     <div class="top">
                                         <div class="titleYear">
@@ -408,18 +415,18 @@
             </div>
         </div>
         <div id="modal" class="modal">
-            <div class="modal-content">
-                <span class="close" onclick="closeModal()">&times;</span>
-                <div class="text">
-                    <h2>Nom du projet</h2>
-                    <img src="projet.png" alt="Projet">
-                    <p>Description du projet</p>
-                </div>
-                <div class="rectangle left">
-                    <div class="btn">Télécharger mon RETEX</div>
-                </div>
-                <div class="rectangle right">
-                    <div class="btn">Voir mon RETEX</div>
+            <div class="position">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <div class="text">
+                        <h2>Nom du projet</h2>
+                        <img src="projet.png" alt="Projet">
+                        <p>Description du projet</p>
+                    </div>
+                    <div class="button-retex">
+                        <div class="btn">Télécharger mon RETEX</div>
+                        <div class="btn"><a href="images/retexHTML.PNG">Voir mon RETEX</a></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -427,7 +434,7 @@
 
     <section class="contact" id="contact">
         <h2 class="heading">Contactez <span>Moi</span></h2>
-        <form action="email.php">
+        <form action="email.php" method="POST">
             <div class="input-box">
                 <div class="input-field">
                     <input type="text" placeholder="Full Name: " required>
