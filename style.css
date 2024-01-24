@@ -130,9 +130,13 @@ section {
   font-size: 1.8rem;
   font-weight: 600;
   letter-spacing: 0.1rem;
-  color: var(--bg-color);
   z-index: 1;
   overflow: hidden;
+  transition: 0.5s;
+}
+
+.btn a {
+  color: var(--bg-color);
   transition: 0.5s;
 }
 
@@ -163,7 +167,11 @@ section {
 
 .btn:hover {
   cursor: pointer;
+}
+
+.btn:hover a {
   color: var(--main-color);
+  transition: 0.5s;
 }
 
 .btn:hover::before {
